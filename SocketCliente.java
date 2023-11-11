@@ -29,6 +29,10 @@ public class SocketCliente {
             System.out.println("5. Salir");
             String operacion = sc.nextLine();
 
+            if (operacion == "5") {
+                System.exit(0);
+            }
+
             System.out.println("Intoduce el primer numero");
             String numero1 = sc.nextLine();
             String numero2 = sc.nextLine();
