@@ -29,7 +29,7 @@ public class SocketCliente {
             System.out.println("5. Salir");
             String operacion = sc.nextLine();
 
-            if (operacion == "5") {
+            if (operacion.equals("5")) {
                 System.exit(0);
             }
 
