@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "flatlaf-3.2.5.jar"
+        "flatlaf-3.2.5.jar",
+        "Socket\\flatlaf-3.2.5.jar"
     ]
 }

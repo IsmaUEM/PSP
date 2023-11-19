@@ -1,4 +1,7 @@
 import javax.swing.*;
+
+import com.formdev.flatlaf.FlatDarkLaf;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -8,7 +11,6 @@ import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import com.formdev.flatlaf.FlatDarkLaf;
 
 
 public class SocketCliente extends JFrame implements ActionListener {
