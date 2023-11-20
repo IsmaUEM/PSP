@@ -22,7 +22,7 @@ public class SocketCliente {
 				try {
 					String mensajeServidor;
 					while ((mensajeServidor = entrada.readLine()) != null) {
-						System.out.println("Servidor: " + mensajeServidor);
+						System.out.println(mensajeServidor);
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
