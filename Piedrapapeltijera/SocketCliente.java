@@ -8,35 +8,36 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 
 public class SocketCliente {
-    public static final int PUERTO = 2018;
-    public static final String IP_SERVER = "192.168.0.29";
+	public static final int PUERTO = 2018;
+	public static final String IP_SERVER = "localhost";
 
-     public static void main(String[] args) {
-        try (Socket socketAlServidor = new Socket()) {
-            InetSocketAddress direccionServidor = new InetSocketAddress(IP_SERVER, PUERTO);
-            BufferedReader entrada = new BufferedReader(new InputStreamReader(socketAlServidor.getInputStream()));
-            PrintWriter salida = new PrintWriter(socketAlServidor.getOutputStream(), true);
+	public static void main(String[] args) {
+		try (Socket socketAlServidor = new Socket()) {
+			InetSocketAddress direccionServidor = new InetSocketAddress(IP_SERVER, PUERTO);
+		    socketAlServidor.connect(direccionServidor); 
+		    BufferedReader entrada = new BufferedReader(new InputStreamReader(socketAlServidor.getInputStream()));
+		    PrintWriter salida = new PrintWriter(socketAlServidor.getOutputStream(), true);
 
-            new Thread(() -> {
-                try {
-                    String mensajeServidor;
-                    while ((mensajeServidor = entrada.readLine()) != null) {
-                        System.out.println("Servidor: " + mensajeServidor);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }).start();
+			new Thread(() -> {
+				try {
+					String mensajeServidor;
+					while ((mensajeServidor = entrada.readLine()) != null) {
+						System.out.println("Servidor: " + mensajeServidor);
+					}
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}).start();
 
-            BufferedReader entradaUsuario = new BufferedReader(new InputStreamReader(System.in));
+			BufferedReader entradaUsuario = new BufferedReader(new InputStreamReader(System.in));
 
-            while (true) {
-                String eleccion = entradaUsuario.readLine();
-                salida.println(eleccion);
-            }
+			while (true) {
+				String eleccion = entradaUsuario.readLine();
+				salida.println(eleccion);
+			}
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
