@@ -1,0 +1,75 @@
+{
+  "ordenador": {
+    "nombre": "Flameador 2024",
+    "precio": 1900,
+    "perifericos": {
+      "teclado": {
+        "nombre": "Flaming pro eco 2",
+        "marca": "Flamer Gaming SL"
+      },
+      "raton": {
+        "nombre": "Insultating pro 1",
+        "marca": "Flamer Gaming SL"
+      }
+    },
+    "componentes": {
+      "monitor": {
+        "nombre": "4K feeder pro-max",
+        "marca": "Rager",
+        "resolution": "2160p"
+      },
+      "placa_base": {
+        "modelo": "B470",
+        "marca": "iAmanoob",
+        "slots_ram": 4
+      },
+      "ram": [
+        {
+          "id": "1",
+          "marca": "Flaming",
+          "tipo": "DDR4",
+          "capacidad": "8GB"
+        },
+        {
+          "id": "2",
+          "marca": "Flaming",
+          "tipo": "DDR4",
+          "capacidad": "8GB"
+        }
+      ],
+      "procesador": {
+        "marca": "Manker",
+        "modelo": "i9.5",
+        "velocidad": "5Ghz"
+      },
+      "discos_duros": [
+        {
+          "id": "1",
+          "marca": "Manker",
+          "tipo": "HDD",
+          "capacidad": "2TB"
+        },
+        {
+          "id": "2",
+          "marca": "Rager",
+          "tipo": "SDD",
+          "capacidad": "500GB"
+        }
+      ],
+      "fuente_alimentacion": {
+        "marca": "Manker",
+        "modelo": "ATX",
+        "potecia": {
+          "valor": 750,
+          "unidad": "KW"
+        }
+      },
+      "tarjeta_grafica": {
+        "marca": "iAmanoob",
+        "modelo": "4080",
+        "precio": "2 bitcoins",
+        "potencia": "Trillon cudas"
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "flatlaf-3.2.5.jar",
-        "Socket\\flatlaf-3.2.5.jar"
+        "Socket\\flatlaf-3.2.5.jar",
+        "c:\\Users\\ismae\\Downloads\\gson-2.8.6.jar"
     ]
 }
